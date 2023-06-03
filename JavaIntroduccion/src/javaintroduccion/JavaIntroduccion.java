@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package javaintroduccion;
-
+import java.util.Scanner;
 /**
  *
  * @author aarones
@@ -16,6 +16,12 @@ public class JavaIntroduccion {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner leer = new Scanner(System.in);
+        System.out.println("Ingresa los grados actualmente");
+        float num = leer.nextFloat();
+        float faren = 32 +  ((9*num)/5);
+        System.out.println("Los grados Fahrenheit son: "+faren);
+        
     }
     
 }
